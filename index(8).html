@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    
+<h1>Form</h1>
+
+<h2>github page </h2>
+
+<form action ="https://github.com/SaraMeizer"  target="_blank" autocomplete="on">
+    <label for="name">First name: </label><br>
+    <input type="text" id="name" name="name" ><br>
+    <label for="sname">Second name: </label><br>
+    <input type="text" id="sname" name="sname" ><br><br>
+    <input type="image" src="images/emoji_cat.jpeg" alt="Submit" width="48" height="48">
+</form>
+<br>
+
+<form novalidate>
+ <label for="email">Enter your email:</label><br>
+  <input type="email" id="email" name="email" placeholder="sara2006@ju.jo"><br>
+   <label for="birthday">Birthday:</label><br>
+  <input type="date" id="birthday" name="birthday"><br>
+      <input type="reset" value="Reset">
+
+</form>
+
+<p>Choose your favorite name</p>
+<form>
+  <input type="radio" id="yname" name="fav_name" value="Sara">
+  <label for="yname">Sara</label><br>
+  <input type="radio" id="uname" name="fav_name" value="Rannem">
+  <label for="uname">Rannem</label><br>
+  <input type="radio" id="tname" name="fav_name" value="Fatima">
+  <label for="tname">Fatima</label><br>
+</form> 
+
+<form>
+  <label for="names">Choose a name:</label>
+  <select id="names" name="names" >
+    <option value="sara">Sara</option>
+    <option value="saad">Saad</option>
+    <option value="samir">Samir</option>
+    <option value="suwar">Suwar</option>
+  </select>
+  <br><br>
+  
+  <label for="namet">Choose a name:</label>
+ <input list="namet" name="name">
+  <datalist id="namet">
+    <option value="Sara">
+    <option value="Yanal">
+    <option value="Yara">
+    <option value="Saad">
+    <option value="Amal">
+  </datalist>
+</form>
+
+<form >
+  <textarea name="message" rows="10" cols="30">Sara helps Suwar and Samir with the project and presenting it to Saad .</textarea>
+  <br><br>
+</form>
+
+<h2>Calculate the result:</h2>
+<button type="button" onclick="alert('3+3*3=12')">Click Me!</button>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="150">
+  300 +
+  <input type="number" id="b" name="b" value="150">
+  =
+  <output name="x" for="a b"></output>
+  <br>
+    <input type="reset" value="Reset">
+  <br>
+  <label for="color">My favorite color:</label>
+  <input type="color" id="color" name="color" value="#00ff00">
+</form>
+</body>
+</html>
