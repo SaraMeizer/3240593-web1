@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML6</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+ /* border-collapse: collapse;*/
+   border-style: dotted;
+  width: 100%;
+  border-spacing: 20px;
+}
+
+td, th {
+  border: 2px solid #cccccc;
+  padding: 8px;
+}
+
+td{
+    padding-left: 30px;
+}
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+th, td {
+    border: 3px solid green;
+      border-radius: 10px;
+    
+}
+th:nth-child(even),td:nth-child(even) {
+  background-color: #7ce4e4;
+}
+tr:hover {background-color: #6aca9d;}
+
+</style>
+</head>
+<body>
+
+<h3>Tables </h3>
+
+<table style="width:100%">
+      <caption>Cumulative rates</caption>
+
+  <tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>GPA</th>
+  </tr>
+  <tr>
+    <td>Aseel</td>
+    <td>3240500</td>
+    <td>3.08</td>
+  </tr>
+  <tr>
+    <td>Amal</td>    
+    <td>3240501</td>
+    <td style="background-color: rgb(112, 231, 112);">3.5</td>
+  </tr>
+  <tr>
+    <td>Ahmed</td>
+    <td >3240502</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Amer</td>
+    <td>3240503</td>
+    <td>2.89</td>
+  </tr>
+  <tr>
+    <td >Adam</td>
+    <td>3240504</td>
+    <td>3.3</td>
+  </tr>
+  <tr>
+    <td>Aya</td>
+    <td>3240505</td>
+    <td>3</td>
+  </tr>
+   <tr>
+    <td>Alma</td>
+    <td>3240506</td>
+    <td style="background-color: rgb(245, 104, 104);">2.55</td>
+  </tr>
+</table>
+
+<h1>Table</h1>
+<table style="width:100%">
+      <caption>Cumulative rates 2</caption>
+<colgroup>
+    <col span="1" style="background-color: #D6EEEE">
+    <col span="1" style="visibility: collapse">
+    <col span="2" style="background-color: pink">
+
+  </colgroup>
+  <tr>
+    <th colspan="2">Name</th>
+    <th style="width: 50%;">ID</th>
+    <th>GPA</th>
+  </tr>
+  <tr>
+    <td>Aseel</td>
+    <td> </td>
+    <td>3240500</td>
+    <td>3.08</td>
+  </tr>
+  <tr>
+    <td>Amal</td>    
+    <td> </td>
+    <td>3240501</td>
+    <td style="background-color: rgb(112, 231, 112);">3.5</td>
+  </tr>
+  <tr style="height: 70px;">
+    <td>Ahmed</td>
+    <td> </td>
+    <td >3240502</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Amer</td>
+    <td> </td>
+    <td>3240503</td>
+    <td>2.89</td>
+  </tr>
+  <tr>
+    <td >Adam</td>
+    <td> </td>
+    <td>3240504</td>
+    <td>3.3</td>
+  </tr>
+  <tr>
+    <td>Aya</td>
+    <td> </td>
+    <td>3240505</td>
+    <td>3</td>
+  </tr>
+   <tr>
+    <td>Alma</td>
+    <td> </td>
+    <td>3240506</td>
+    <td style="text-align: right;  background-color: rgb(245, 104, 104);">2.55</td>
+  </tr>
+</table>
+
+<h1>Lists</h1>
+<h2>An Unordered HTML List.fruits</h2>
+
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Berries</li>
+  <li>Strawberry</li>
+  <li>watermelon</li>
+</ul>  
+
+<h2>An Ordered HTML List.fruits</h2>
+
+<ol>
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Berries</li>
+  <li>Strawberry</li>
+  <li>watermelon</li>
+</ol> 
+ <h1>'Rate'</h1>
+<h2>An Unordered HTML List.fruits</h2>
+
+<ul style="list-style-type:circle;">
+  <li>Apple</li>
+  <dt>Banana</dt>
+  <li>Berries
+    <ul>
+        <li>Blue-Berry</li>
+        <li>Red-Berry</li>
+        <li>Black-Berry</li>
+    </ul>
+  </li>
+  <dt>Strawberry</dt>
+  <li>watermelon</li>
+</ul>  
+
+<h2>An Ordered HTML List.fruits</h2>
+
+<ol type="I">
+  <li>Apple</li>
+  <dd>- Banana</dd>
+  <li>Berries
+    <ol>
+        <li>Blue-Berry</li>
+        <li>Red-Berry</li>
+        <li>Black-Berry</li>
+    </ol>
+  </li>
+  <dd>- Strawberry</dd>
+  <li>watermelon</li>
+</ol> 
+<dl>
+  <dt>Cocktail</dt>
+  <dd>Banana milk</dd>
+  <dd>Chocolate milk</dd>
+  <dt>Smoothie</dt>
+  <dd>Smoothie berry</dd>
+  <dd>Smoothie watermelon</dd>
+</dl>
+
+<div style="background-color:green;color:white;padding:30px;">
+  <h2 style="border: 1px solid black">Project</h2>
+  <p>This page contains <span style="color:aqua;font-weight:bold;">several HTML </span>sites that have been applied and implemented and contain many <span style="color:plum;font-weight:bold;">ideas.</span></p>
+
+</body>
+</html>
